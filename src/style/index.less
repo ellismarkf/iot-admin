@@ -1,0 +1,117 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: rgb(240, 239, 244);
+}
+
+.navbar {
+  background-color: black;
+  color: white;
+  padding: 15px 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  h3 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px;
+    font-weight: 300;
+  }
+  span {
+    float: left;
+    vertical-align: middle;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.device-list-item {
+  display: block;
+  background-color: white;
+  color: black;
+  margin: 0px 5px 1px;
+  padding: 20px 10px;
+  text-decoration: none;
+  box-shadow: 0px 2px 3px #CCC;
+  span:last-child {
+    float: right;
+    color: #CCC;
+  }
+}
+
+.ui-control {
+  .device-list-item;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  p {
+    display: inline-block;
+    width: 30%;
+  }
+  input {
+    width: 60%;
+    height: 5rem;
+  }
+  select {
+    font-size: 32px;
+  }
+  button {
+    color: transparent;
+    position: relative;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 3rem;
+    background-color: white;
+    border: 1px solid #BBB;
+  }
+  button:focus {
+    outline: none;
+  }
+}
+
+.switch {
+  padding: 3px;
+  border-radius: 4rem;
+  width: 5rem;
+  margin-right: 25px;
+}
+
+.switch-active {
+  .switch;
+  background-color: green;
+  button {
+    left: 2rem;
+  }
+}
+
+.switch-inactive {
+  .switch;
+  background-color: #CCC;
+}
+
+@media screen and (min-width: 30em) {
+  .navbar {
+    padding: 30px 20px;
+    h3 {
+      font-size: 3rem;
+    }
+    span {
+      font-size: 2.5rem;
+    }
+  }
+  .device-list-item {
+    padding: 50px 25px;
+    font-size: 2.75rem;
+  }
+  .ui-control {
+    p {
+      font-size: 2.75rem;
+    }
+    select {
+      font-size: 2.75rem;
+    }
+  }
+}
