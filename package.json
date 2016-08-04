@@ -1,7 +1,7 @@
 {
   "name": "iot-admin",
   "version": "1.0.0",
-  "description": "admin dashboard and mobile webapp for configuring and controlling connected devices",
+  "description": "admin dashboard for configuring and controlling connected devices",
   "main": "index.js",
   "scripts": {
     "test": "mocha"

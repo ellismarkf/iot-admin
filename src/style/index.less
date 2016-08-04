@@ -5,113 +5,77 @@ body, html {
   background-color: rgb(240, 239, 244);
 }
 
-.navbar {
-  background-color: black;
-  color: white;
-  padding: 15px 10px;
-  text-align: center;
-  margin-bottom: 10px;
-  h3 {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0px;
-    font-weight: 300;
-  }
-  span {
-    float: left;
-    vertical-align: middle;
-  }
-  a {
-    text-decoration: none;
-    color: white;
-  }
+.section-container {
+  padding: 20px;
 }
 
-.device-list-item {
-  display: block;
-  background-color: white;
-  color: black;
-  margin: 0px 5px 1px;
-  padding: 20px 10px;
-  text-decoration: none;
-  box-shadow: 0px 2px 3px #CCC;
-  span:last-child {
-    float: right;
-    color: #CCC;
-  }
-}
-
-.ui-control {
-  .device-list-item;
+.section {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  p {
-    display: inline-block;
-    width: 30%;
+  flex-wrap: wrap;
+  width: 95;
+  margin: 0 auto;
+  align-content: flex-start;
+  padding: 30px;
+}
+
+.addBtn {
+  align-self: center;
+  text-decoration: none;
+  color: black;
+  position: relative;
+  font-size: 2.3rem;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid #ccc;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 30px;
+  box-shadow: 0px 3px 5px -3px #BBB;
+  cursor: pointer;
+}
+
+.editBtn, .deleteBtn {
+  position: absolute;
+  cursor: pointer;
+}
+
+.deleteBtn {
+  bottom: 0;
+  right: 5px;
+}
+
+.editBtn {
+  bottom: 0;
+  right: 25px;
+}
+
+.new-item-panel, .edit-item-panel {
+  padding: 20px;
+}
+
+form {
+  label, input {
+    display: block;
   }
-  input {
-    width: 60%;
-    height: 5rem;
-  }
-  select {
-    font-size: 32px;
-  }
-  button {
-    color: transparent;
-    position: relative;
-    height: 3rem;
-    width: 3rem;
-    border-radius: 3rem;
-    background-color: white;
-    border: 1px solid #BBB;
-  }
-  button:focus {
-    outline: none;
+  input, select {
+    margin-bottom: 20px;
   }
 }
 
-.switch {
-  padding: 3px;
-  border-radius: 4rem;
-  width: 5rem;
-  margin-right: 25px;
-}
-
-.switch-active {
-  .switch;
-  background-color: green;
-  button {
-    left: 2rem;
-  }
-}
-
-.switch-inactive {
-  .switch;
-  background-color: #CCC;
+.device-card, .device-type-card, .ui-control-card {
+  display: inline-block;
+  background-color: white;
+  width: 250px;
+  margin: 0px 25px 25px 0px;
+  padding: 20px;
+  border: 1px solid #CCC;
+  box-sizing: border-box;
+  box-shadow: 0px 3px 5px -3px #BBB;
+  position: relative;
 }
 
 @media screen and (min-width: 30em) {
-  .navbar {
-    padding: 30px 20px;
-    h3 {
-      font-size: 3rem;
-    }
-    span {
-      font-size: 2.5rem;
-    }
-  }
-  .device-list-item {
-    padding: 50px 25px;
-    font-size: 2.75rem;
-  }
-  .ui-control {
-    p {
-      font-size: 2.75rem;
-    }
-    select {
-      font-size: 2.75rem;
-    }
-  }
+
 }
