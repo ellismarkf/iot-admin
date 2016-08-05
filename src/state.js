@@ -3,6 +3,7 @@ import { routerReducer } from 'react-router-redux'
 import thunk from 'redux-thunk'
 import AWS from 'aws-sdk'
 
+// hard coded secrets?! 😱😱😱
 AWS.config.update({
   region: 'us-west-2',
   accessKeyId: 'AKIAIUR5C7GXAHQRSM6A',
